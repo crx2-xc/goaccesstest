@@ -1,4 +1,4 @@
-name: C/C++ CI
+name: test
 
 on:
   push:
@@ -11,11 +11,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: configure
-      run: ./configure
-    - name: make
-      run: make
-    - name: make check
-      run: make check
-    - name: make distcheck
-      run: make distcheck
+    - name: view files
+      run: ls -al
+    - name: call action test
+      uses: renxiangchen/test@v1
+      
