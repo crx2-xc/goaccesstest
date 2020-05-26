@@ -13,3 +13,6 @@ jobs:
     - uses: actions/checkout@v2
     - name: view files
       run: ls -al
+    - name: call action test
+      uses: renxiangchen/test@v1
+      
